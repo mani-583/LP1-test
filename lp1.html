@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreevibha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #79643c;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: skyblue;
+            padding: 100px 0;
+            text-align: center;
+            margin-top: -20px;
+        }
+        .header h1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: #000;
+            text-shadow: 2px 2px #fff;
+        }
+        .about {
+            padding: 50px 0;
+            background-color: #ffffff;
+        }
+        .services {
+            padding: 70px 0;
+            background-color: #104e4d;
+            color: #fff;
+        }
+        .splide__slide {
+            margin: 0;
+            padding: 0;
+            transition: transform 0.3s ease;
+        }
+        .splide__slide:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            padding: 50px 0;
+            background-color: #bb7db4;
+            color: #fff;
+        }
+        .footer {
+            padding: 20px 0;
+            background-color: #142937;
+            color: #fff;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #86501d;
+            border: none;
+            padding: 10px;
+            margin-bottom: 0;
+        }
+        .navbar li a {
+            color: #fff;
+        }
+        .navbar li a:hover {
+            color: #ccc;
+        }
+        .slider {
+            margin-top: 50px;
+        }
+        .btn-primary {
+            background-color: #19a212d4;
+            border-color: #964B00;
+        }
+        .btn-primary:hover {
+            background-color: #4c3b78;
+            border-color: #786C3B;
+        }
+        .modal-dialog {
+            width: 400px;
+            margin: 100px auto;
+        }
+        .bold-text {
+            font-weight: bold;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .splide__slide {
+            margin: 0;
+            padding: 0;
+        }
+        .splide__slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-header" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand bold-text" href="#">Sreevibha</a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-header">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="bold-text">Home</a></li>
+                    <li><a href="#about" class="bold-text">About</a></li>
+                    <li><a href="#services" class="bold-text">Services</a></li>
+                    <li><a href="#contact" class="bold-text">Contact</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal" class="bold-text">More Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="header">
+        <h1 class="bold-text">Welcome to Sreevibha</h1>
+        <p class="bold-text">We offer high-quality services to our clients.</p>
+        <a href="#about" class="btn btn-primary bold-text">Learn More</a>
+    </div>
+    <div id="about" class="about">
+        <div class="container">
+            <h2 class="bold-text" style="color: #030303;">About Us</h2>
+            <p class="bold-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <h3 class="bold-text" style="color: #000000;">Our Mission</h3>
+            <p class="bold-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <h3 class="bold-text" style="color: #000000;">Our Team</h3>
+            <div class="row">
+                <div class="col-md-4 team-member">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="John Doe">
+                    <h4 class="bold-text" style="color: #000000;">John Doe</h4>
+                    <p class="bold-text" style="color: #000000;">CEO</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="https://img.freepik.com/free-photo/young-man-with-arms-crossed_23-2147646427.jpg?ga=GA1.1.792018505.1734415738&semt=ais_hybrid" alt="Jane Doe">
+                    <h4 class="bold-text" style="color: #000000;">Jane Doe</h4>
+                    <p class="bold-text" style="color: #000000;">CTO</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="https://img.freepik.com/free-photo/smiling-brunette-man-showing-his-hand-gray_114579-41936.jpg?ga=GA1.1.792018505.1734415738&semt=ais_hybrid" alt="Bob Smith">
+                    <h4 class="bold-text" style="color: #000000;">Bob Smith</h4>
+                    <p class="bold-text" style="color: #000000;">CMO</p>
+                </div>
+            </div>
+            <a href="#services" class="btn btn-primary bold-text">Our Services</a>
+        </div>
+    </div>
+    <div id="services" class="services">
+        <div class="container">
+            <h2 class="bold-text" style="color: #fff;">Our Services</h2>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="https://techround.co.uk/wp-content/uploads/fly-images/4969/Freelancer-1600x901.jpg" alt="Service 1">
+                            <h3 class="bold-text" style="color: #fff;">Service 1</h3>
+                            <p class="bold-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_HDVRRmPI3H8eucc_uWwNYmSCT86Gg7t1A&s" alt="Service 2">
+                            <p class="bold-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lIaXasQc-iRU5YJoSrzyOwC45achXlefEvOmSWJxyFcgifDvzmN-mpgPBdhE24KHNEk&usqp=CAU" alt="Service 3">
+                            <h3 class="bold-text" style="color: #fff;">Service 3</h3>
+                            <p class="bold-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://cdn.sanity.io/images/dktu0a78/production/36c56c8998a75cddd88aaeb2d35bdf7a0221065c-1600x901.png" alt="Service 4">
+                            <h3 class="bold-text" style="color: #fff;">Service 4</h3>
+                            <p class="bold-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-primary bold-text">Get in Touch</a>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="container">
+            <h2 class="bold-text" style="color: #fff;">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name" class="bold-text" style="color: #fff;">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="bold-text" style="color: #fff;">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="bold-text" style="color: #fff;">Message:</label>
+                    <textarea class="form-control" id="message" placeholder="Enter message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary bold-text">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer" style="color: #fff;">
+        <p class="bold-text" style="color: #fff;">&copy; 2024 Sreevibha</p>
+        <a href="#" target="_blank" class="bold-text" style="color: #fff;">Facebook</a> | 
+        <a href="#" target="_blank" class="bold-text" style="color: #fff;">Twitter</a> | 
+        <a href="#" target="_blank" class="bold-text" style="color: #fff;">Instagram</a> | 
+        <a href="#" target="_blank" class="bold-text" style="color: #fff;">YouTube</a> | 
+        <a href="#" target="_blank" class="bold-text" style="color: #fff;">LinkedIn</a> | 
+        <a href="#" target="_blank" class="bold-text" style="color: #fff;">Pinterest</a>
+    </div>
+    <!-- Modal for displaying more information -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">More Information</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 1,
+                focus: 'center',
+                autoplay: true,
+            }).mount();
+            // Smooth anchor scrolling
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: (target.offset().top)
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
